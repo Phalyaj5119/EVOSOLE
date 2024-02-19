@@ -1,0 +1,526 @@
+.bg {
+  background: linear-gradient(
+    247deg,
+    #5E0616 0%,
+    #77071C 16.67%,
+    #920720 30.5%,
+    #A81833 50%,
+    #920720 66.67%,
+    #8C051E 83.33%,
+    #530312 100%
+  );
+  background-size: cover;
+  display: flex;
+  width: 100vw; /* Use viewport width to cover the entire screen horizontally */
+  height: 100vh; /* Use viewport height to cover the entire screen vertically */
+  flex-direction: column;
+  align-items: center;
+}
+
+  .logo1 {
+    display: flex;
+    width: 1000px;
+    height:500px;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  @media (max-width: 991px) {
+    .logo1 {
+      max-width: 50%;
+      flex-wrap: flex;
+    }
+  }
+  .logo {
+    height: auto;
+    aspect-ratio: 3.33;
+    object-fit: contain;
+    object-position: center;
+    width: 188px;
+    overflow: hidden;
+    max-width: 100%;
+    position: absolute;
+    height: 56px;
+    top: 28px;
+    left: 49px;
+    object-fit: cover;
+  }
+  @media screen and (max-width: 600px) {
+    /* Adjust button size for smaller screens */
+    .logo {
+        padding: 8px 16px;
+        font-size: 15px;
+        left: 24%;
+    }
+}
+  
+  .nav {
+    align-self: start;
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  @media screen and (max-width: 991px) {
+    .nav {
+      width: 100%;
+      height: auto;
+
+    }
+  }
+  .login {
+    display: flex;
+    text-align: center;
+    padding-top: 0.5%;
+    padding-left: 0.9%;
+    color: #020000;
+    font: 700 13px JetBrains Mono, sans-serif;
+    position: absolute;
+    width: 70px;
+    height: 32px;
+    top: 6.8%;
+    left: 44%;
+    border-radius: 30px;
+    border: 2.5px solid;
+    border-color: #000000f8;
+  }
+  @media screen and (max-width: 991px) {
+    .login {
+      max-width: 100%;
+      position: absolute;
+      top: 21.5%;
+      left:30%;
+      padding-left: 2.5%;
+      padding-top: 1.5%;
+
+    }
+  }
+  .sign {
+    display: flex;
+    text-align: center;
+    padding-top: 0.5%;
+    padding-left: 0.5%;
+    color: #000000;
+    white-space: nowrap;
+    background-color: rgba(217, 217, 217, 0.504);
+    font: 700 13px JetBrains Mono, sans-serif;
+    position: absolute;
+    width: 70px;
+    height: 30px;
+    top: 7%;
+    left: 50%;
+    border-radius: 30px;
+    border: 1.7px solid rgb(255, 255, 255);
+  }
+  @media screen and (max-width: 1000px) {
+    .sign {
+      white-space: initial;
+      max-width: 100%;
+      margin-top: 10%;
+      top: 15%;
+      left: 55%;
+      padding-top: 1.5%;
+      padding-left: 1.5%;
+    }
+  }
+  .cart1 {
+    display: flex;
+    gap: 10px;
+    margin: 17px 0;
+  }
+  
+  .cart {
+    color: #ffffff;
+    background-color: #ffffff00;
+    border-color: #00000000;
+    font: 500 15px JetBrains Mono, sans-serif;
+    margin-top: 10px;
+  }
+  @media screen and (max-width: 991px) {
+    .cart {
+      max-width: 100%;
+      position: absolute;
+      top: 27%;
+      right: 47%;
+    }
+  }
+  
+  .cartlogo {
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 16px;
+    overflow: hidden;
+    max-width: 100%;
+    margin-top: 10px;
+  }
+  @media screen and (max-width: 991px) {
+    .cartlogo {
+      width: 5%;
+      height: 2.5%;
+      position: absolute;
+      top: 27.3%;
+      right: 43%;
+    }
+  }
+
+  .left {
+    align-self: stretch;
+    display: flex;
+    margin-top: 58px;
+    width: 100%;
+    align-items: end;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  @media (max-width: 991px) {
+    .left {
+      max-width: 100%;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+  }
+ 
+  .leftbutton {
+    height: auto;
+    aspect-ratio: 0.47;
+    object-fit: contain;
+    object-position: center;
+    width: 80px;
+    overflow: hidden;
+    margin-top: 100px;
+    max-width: 100%;
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    rotate: 360deg ;
+  }
+  @media screen and (max-width: 991px) {
+    .leftbutton {
+      width: 13%;
+      height: 9%;
+      top: 28%;
+      left: 4%;
+
+    }
+  }
+  .name {
+    color: #fff;
+    align-self: stretch;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 218px 50PX 50px 51px;
+    font: 700 120px Inter, sans-serif;
+    position: absolute;
+    top: 111px;
+    left: 350px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 120px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  @media (max-width: 991px) {
+    .name {
+          width: 100%;
+          height: auto;
+          font-size: 40px;
+          position: absolute;
+          top: 38%;
+          left: 18%;
+          padding: 40px 0 0 20px;
+    }
+  }
+
+  .right1 {
+    display: flex;
+    margin-top: 185px;
+    flex-basis: 0%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @media (max-width: 991px) {
+    .right1 {
+      width: 50%;
+      height: 50%;
+    }
+  }
+  .right {
+    stroke-width: 1.5px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 27px 50px 55px;
+  }
+  @media (max-width: 991px) {
+    .right {
+      padding: 0 20px;
+    }
+  }
+  .rightbutton {
+    height: auto;
+    aspect-ratio: 0.47;
+    object-fit: contain;
+    object-position: center;
+    width: 80px;
+    overflow: hidden;
+    margin-top: 100px;
+    max-width: 100%;
+    position: absolute;
+    top: 25%;
+    left: 93%;
+    rotate: 180deg;
+  }
+  @media screen and (max-width: 991px) {
+    .rightbutton {
+      width: 13%;
+      height: 9%;
+      top: 28%;
+      left: 85%;
+
+    }
+  }
+
+  .content3 {
+    margin-top: 160px;
+    width: 853px;
+    max-width: 100%;
+    font-size: medium;
+  }
+  @media screen and (max-width: 991px) {
+    .content3 {
+      width: 130%;
+      height: 100%;
+      display: flex;
+      position: absolute;
+      top: 45%;
+
+    }
+  }
+  .content2 {
+    gap: 10px;
+    display: flex;
+  }
+  @media screen and (max-width: 991px) {
+    .content2 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+      font-size: medium;
+    }
+  }
+  .content1 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 80%;
+    margin-left: 0px;
+  }
+  @media screen and (max-width: 768px) {
+    .content {
+      width: 100%;
+      height: auto;
+      font-size: 2%;
+      top: 10%;
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 0 20px;
+  }
+  @media (max-width: 768px) {
+    .content {
+      width: 100%;
+      height: auto;
+      font-size: 20px;
+    }
+  }
+  .price {
+    font: 800 27px JetBrains Mono, sans-serif;
+    padding-bottom: -125px;
+  }
+  @media screen and (max-width: 991px) {
+    .price {
+      max-width: 100%;
+      height: auto;
+      font-size: large;
+    }
+  }
+  .tag {
+    margin-bottom: 5%;
+    font: 500 20px JetBrains Mono, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .tag {
+      max-width: 150%;
+      height: 100%;
+      text-align: left;
+      margin-top: 20px;
+      font-size: medium;
+    }
+  }
+  .buynow1 {
+    background-color: #00000000;
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 2%;
+    border-radius: 30px;
+    margin-bottom: 100%;
+    position: absolute;
+    margin-left: 600px ;
+    
+  }
+  @media screen and (max-width: 991px) {
+    .buynow1 {
+      width: 100%;
+      height: auto;
+      margin-left: 60%;
+    }
+  }
+  .buynow0 {
+    background-color: #00000000;
+    display: flex;
+    margin-top: 70px;
+    margin-left: 40px;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 35px;
+  }
+  @media (max-width: 991px) {
+    .buynow0 {
+      width: 20%;
+      height: 100%;
+      margin-top: 16px;
+      padding-top: 10px;
+    }
+  }
+
+  /* BUY NOW BUTTON */
+
+  .buynow {
+    color: white;
+    width: 180px;
+    background-color: #ffffff00;
+    white-space: nowrap;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    justify-content: center;
+    padding: 18px 35px;
+    font: 500 20px JetBrains Mono, sans-serif;
+    margin-top: -30px;
+  }
+  @media (max-width: 991px) {
+    .buynow {
+      width: 100%;
+      height: auto;
+      white-space: initial;
+      padding: 3px 30px;
+      font-size: x-small;
+      font-weight: 700;
+    }
+  }
+
+
+
+
+
+  /* AIR MAX IMAGE WRAPPING */ 
+.AIR-IMAGE {
+ height: auto;
+  width: 100%;
+  position: absolute;
+  width: 664px;
+  height: 448px;
+  top: 100px;
+  left: 400px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 991px) {
+  .AIR-IMAGE {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 30%;
+    left:23%;
+  }
+}
+
+.name2 {
+    color: #ffffff32;
+    align-self: stretch;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 218px 50PX 50px 51px;
+    font: 700 120px Inter, sans-serif;
+    position: absolute;
+   top: 111px;
+   left: 350px;
+   -webkit-text-stroke: 1px #ffffff;
+   font-family: "Inter-Bold", Helvetica;
+   font-weight: 700;
+   font-size: 120px;
+   letter-spacing: 0;
+   line-height: normal;
+  }
+
+  @media screen and (max-width: 991px) {
+    .name2 {
+      width: 100%;
+      height: auto;
+      font-size: 40px;
+      position: absolute;
+      top: 38%;
+      left: 18%;
+      padding: 40px 0 0 20px;
+    }
+  }
+
+  .circle-button {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.073);
+    border-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 40%;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 991px) {
+    .circle-button {
+      width: 25%;
+      height: 17%;
+    }
+  }
+  
+  .circle-left {
+    left: -20px;
+  }
+  @media screen and (max-width: 991px) {
+    .circle-left {
+      width: 25%;
+      height: 17%;
+      top: 39%;
+    }
+  }
+  
+  .circle-right {
+    right: -20px;
+  }
+  @media screen and (max-width: 991px) {
+    .circle-right {
+      width: 25%;
+      height: 17%;
+      top: 39%;
+    }
+  }
