@@ -1,3 +1,22 @@
+body{
+  background: linear-gradient(247deg,
+  #5E0616 0%,
+  #77071C 16.67%,
+  #920720 30.5%,
+  #A81833 50%,
+  #920720 66.67%,
+  #8C051E 83.33%,
+  #530312 100%);
+   
+  background-size: fit;
+  display: flex;
+  width: 100vw; 
+  height: auto; 
+  flex-direction: column;
+  align-items: center;
+
+}
+/*
 .bg {
   background: linear-gradient(
     247deg,
@@ -11,11 +30,11 @@
   );
   background-size: cover;
   display: flex;
-  width: 100vw; /* Use viewport width to cover the entire screen horizontally */
-  height: 100vh; /* Use viewport height to cover the entire screen vertically */
+  width: 100vw; 
+  height: 100vh; 
   flex-direction: column;
   align-items: center;
-}
+} */
 
   .logo1 {
     display: flex;
@@ -126,7 +145,7 @@
   .cart1 {
     display: flex;
     gap: 10px;
-    margin: 17px 0;
+    margin: 20px 0;
   }
   
   .cart {
@@ -134,7 +153,7 @@
     background-color: #ffffff00;
     border-color: #00000000;
     font: 500 15px JetBrains Mono, sans-serif;
-    margin-top: 10px;
+    margin-bottom: 465%;
   }
   @media screen and (max-width: 991px) {
     .cart {
@@ -142,6 +161,7 @@
       position: absolute;
       top: 27%;
       right: 47%;
+
     }
   }
   
@@ -153,7 +173,7 @@
     width: 16px;
     overflow: hidden;
     max-width: 100%;
-    margin-top: 10px;
+    margin-bottom: 469%;
   }
   @media screen and (max-width: 991px) {
     .cartlogo {
@@ -288,7 +308,9 @@
   }
 
   .content3 {
-    margin-top: 160px;
+    position: absolute;
+    top: 70%;
+    margin-bottom: 100%;
     width: 853px;
     max-width: 100%;
     font-size: medium;
@@ -299,13 +321,16 @@
       height: 100%;
       display: flex;
       position: absolute;
-      top: 45%;
+      top: 65%;
+      left: 10%;
+  
 
     }
   }
   .content2 {
     gap: 10px;
     display: flex;
+    flex-direction: column;
   }
   @media screen and (max-width: 991px) {
     .content2 {
@@ -341,11 +366,13 @@
       width: 100%;
       height: auto;
       font-size: 20px;
+      top: 5%;
     }
   }
   .price {
     font: 800 27px JetBrains Mono, sans-serif;
-    padding-bottom: -125px;
+    padding-bottom: 20px;
+    margin-top: 10%;
   }
   @media screen and (max-width: 991px) {
     .price {
@@ -355,7 +382,7 @@
     }
   }
   .tag {
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     font: 500 20px JetBrains Mono, sans-serif;
   }
   @media (max-width: 991px) {
@@ -374,9 +401,10 @@
     line-height: normal;
     width: 2%;
     border-radius: 30px;
-    margin-bottom: 100%;
+    margin-bottom: 80%;
     position: absolute;
     margin-left: 600px ;
+    top: 5%;
     
   }
   @media screen and (max-width: 991px) {
