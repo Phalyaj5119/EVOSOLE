@@ -1,0 +1,575 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* NAV BAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+    position: relative;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 1em;
+}
+
+.nav-links li a {
+    color: #fff; /* Change the link color */
+    text-decoration: none; /* Remove the underline */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-links li a:hover {
+    color: rgb(159, 151, 151); /* Change the link color on hover */
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-toggle .hamburger {
+    width: 2rem;
+    height: 0.25rem;
+    background: white;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #000000; /* Change this to your preferred color */
+        width: 100%;
+        transition: transform 0.3s ease-in-out;
+        transform: translateY(-100%);
+        padding-top: 60px; /* Add some space at the top */
+    }
+
+    .nav-links li {
+        padding: 15px; /* Add some padding to the links */
+    }
+
+    .nav-links li a {
+        color: #fff; /* Change the link color */
+        text-decoration: none; /* Remove the underline */
+    }
+
+    .nav-links li a:hover {
+        color: #ddd; /* Change the link color on hover */
+    }
+
+    .nav-links.show {
+        transform: translateY(0);
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+}
+/* ------------------------------------------------------------------- */
+/* DROPDOWN MENU */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 105px; /* Add some spacing between dropdowns */
+    padding-left: 30px;/* Place the dropdowns to the left */
+  }
+  
+  .dropbtn {
+    background-color: #fff;
+    border: none;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent; /* Initially no line */
+  }
+  
+  .dropbtn:hover {
+    border-color: rgb(10, 10, 10); /* line on hover */
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: calc(100% + 2px); /* Place dropdown below button */
+    width: 100%;
+    background-color: #fff;
+    z-index: 1; /* to get it to the front of the screen */
+  }
+  
+  .dropdown-content a {
+    color: #000;
+    padding: 10px 20px;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none; /* to have no line below it */
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f9f9f9; /* background on cursor */
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block; /* show dropdown content only on hover */
+  }
+/*-----------------------------------------------------------*/
+/* BANNER */
+.banner {
+  overflow: hidden;
+  background-color: #716d6d4f;
+  color: #000000;
+  font-size: 20px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner-container {
+  display: flex;
+  animation: scrollBanner 10s linear infinite; 
+}
+
+.banner-item {
+  flex: 0 0 100%; 
+}
+
+@keyframes scrollBanner {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%); /* Adjust to cover all items */
+  }
+}
+/* ------------------------------------------------------------- */
+/* JOIN US */
+.join {
+  font-size: 35px; 
+  font-weight: 800;
+  padding-left: 610px;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .join {
+    font-size: 20px;
+    padding-left: 20px;
+    
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .join {
+    font-size: 18px; 
+  }
+}
+
+.join-us{
+  border-radius: 35px;
+  background-color: #000000;
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  justify-content: center;
+  margin-left: 140px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+@media screen and (max-width: 768px) {
+  .join-us {
+    max-width: 100%;
+  }
+}
+
+.join-us:hover{
+  background-color: #7d7d7db7;
+}
+
+.spotlight{
+  font-size: 20px;
+  font-weight: 200;
+  padding-right: 620px;
+}
+
+@media screen and (max-width: 768px) {
+  .spotlight{
+    font-size: 15px;
+    justify-content: center;
+  }
+}
+
+.spotlight1{
+  font-size: 28px;
+  font-weight: 200;
+  padding-left: 65px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.alumni {
+  padding-left: 65px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 768px) {
+  .alumni {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .spotlight1 {
+    font-size: 20px;
+  }
+}
+/*--------------------------------------------------------------*/
+/* SHOE DISPLAY 1 */
+/* NAVIGATION CONTAINER */
+.container1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+    
+}
+
+.product {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.5s ease;
+}
+
+.product img {
+  max-width: 200%;
+  max-height: 200%;
+  width: 50%;
+  height: auto;
+  position: absolute;
+  right: 500px;
+  bottom: 10px;
+  rotate: -15deg;
+}
+
+.description1 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0);
+  transition: opacity 0.5s ease;
+  text-align: center;
+  position: absolute;
+  left: 300px;
+}
+
+.navigation1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  z-index: 1;
+}
+
+.navigation1 button {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 20px;
+  color: #333;
+}
+
+.navigation1 button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.buy-now1 {
+    position: absolute;
+    top: 300px;
+    left: 900px;
+    z-index: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 35px;
+    font-size: 30px;
+    height: 60px;
+    width: 200px;
+
+  }
+  .buy-now1:hover {
+    background-color: white;
+    color: black;
+    font-weight: 400;
+    border-color: #000000;
+  }
+
+  .product-name{
+    font-size: 200px;
+    position:absolute;
+    top: -300px;
+    left: 80px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#ffffffdf;
+    text-shadow:  10% #000000;
+  }
+
+  .product-description{
+    font-size: 50px;
+    position: absolute;
+    top: 245px;
+    display: inline;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+/* ------------------------------------------------------------- */
+/* SHOE DISPLAY 2 */
+/* GRID */
+  .grid {
+    background-color: rgb(252, 250, 250);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 15px;
+    padding: 20px;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+  }
+  
+  .grid-item:hover img {
+    transform: scale(1.1); 
+  }
+  
+  .grid-video video {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+  }
+
+  .grid-video:hover video {
+    transform: scale(1.1); 
+  }
+
+  .shop {
+    font-size: 28px; 
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .shop {
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .shop {
+      font-size: 18px; 
+    }
+  }
+  
+  /* ------------------------------------------------------------- */
+  /* SHOE DISPLAY  3 */
+  /* CAROUSEL */
+  .carousel {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-container {
+    display: flex;
+    padding: 10px;
+  }
+  
+  .slide1 {
+    position: relative;
+    flex: 0 0 33.33%; /* Three images displayed horizontally */
+    transition: transform 0.5s ease;
+  }
+  
+  .slide1 img {
+    max-width: 95%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .description {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    z-index: 1;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  @media screen and (max-width: 768px) {
+    .description {
+      font-size: 8px;
+      left: 10px;
+      top: 3px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .description {
+      font-size: 8px; 
+    }
+  }
+  
+  .buy-now {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    z-index: 1;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 25px;
+  }
+
+  .buy-now:hover {
+    background-color: white;
+    color: black;
+    font-weight: 400;
+    border-color: #000000;
+  }
+  
+  .indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .indicator.active {
+    background-color: #333;
+  }
+  /* --------------------------------------------------------------------- */
+  /* SHOE DISPLAY 4 */
+  /* SLIDER */
+  .slider-container {
+    position: relative;
+    overflow: hidden;
+
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    
+  }
+  
+  .slide {
+    flex: 0 0 33.33%; /* Display three images initially */
+    margin: 0 auto; /* This centers the container horizontally */
+  }
+  
+  .slide img {
+    max-width: 80%;
+    display: flex; /* Use flexbox to center vertically and horizontally */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 400px; /* Adjust height as needed */
+  padding-left: 69px;
+  }
+  
+  .shop-more {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #fffffff0;
+    color: #000000;
+    cursor: pointer;
+    border-color: #9a4444;
+    border-radius: 25px;
+    font-size: medium;
+  }
+
+  /*-----------------------------------------------------------------------*/
+  /* FOOTER */
+  footer {
+    text-decoration: none;
+    display: flex; /* Use Flexbox to layout the footer sections */
+    justify-content: space-between; /* Distribute the sections evenly across the footer */
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+  .footer-section {
+    flex: 1; /* Each section will take up an equal amount of space */
+    margin: 0 10px; /
+  }
+  .footer-section ul {
+    list-style-type: none;
+  }
+  footer {
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  footer a {
+    text-decoration: none;
+    color: grey;
+  }
+  footer a:hover {
+    color: white;
+  }
+  footer h3 {
+    color: white;
+  }
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  /* -------------------------------------------------------------------- */
+
+  
